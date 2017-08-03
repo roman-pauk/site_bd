@@ -1,2 +1,16 @@
 @font-color: #777;
 @accent-color: #e83a93;
+
+.square-rotate(@size, @text-color: #fff, @border-color: #fff){
+	width: @size;
+	height: @size;
+	transform: rotate(45deg);
+	border: 1px solid @border-color;
+	color: @text-color;
+}
+.psevdo(){
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+}
