@@ -13,14 +13,37 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {}
+@media only screen and (max-width : 768px) {
+	.feature{
+		flex-direction: column;
+		align-items: center;
+		&__left{
+			height: 250px;
+		}
+	}
+}
 
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {}
+@media only screen and (max-width : 500px) {
+	.headerContent{
+		transform: scale(0.8);
+	}
+}
 
+@media only screen and (max-width : 480px){}
 
+@media only screen and (max-width : 440px){
+	.headerContent{
+		transform: scale(0.7);
+	}
+}
+@media only screen and (max-width : 390px){
+	.headerContent{
+		margin-left: -40px;
+	}
+}
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {}
@@ -50,6 +73,10 @@
 
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {}
+@media only screen and (min-width : 1200px) {
+	.headerContent{
+		transform: scale(1.4);
+	}
+}
 
 

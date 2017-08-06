@@ -33,6 +33,7 @@ gulp.task('common-js', ['lint'], function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/OwlCarousel2/dist/owl.carousel.min.js',
 
 		'app/js/common.min.js' // allways end
 		])

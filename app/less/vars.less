@@ -1,12 +1,24 @@
 @font-color: #777;
 @accent-color: #e83a93;
 
-.square-rotate(@size, @text-color: #fff, @border-color: #fff){
+@default-font: "HomizioNova", sans-serif;
+
+//mixin font-face
+.font-face(@font-family, @file-path, @weight: normal, @style: normal){
+	@font-face{
+		font-family: @font-family;
+		font-weight: @weight;
+		font-style: @style;
+		src: url("@{file-path}.eot");
+		src: url("@{file-path}.eot?#iefix") format('embedded-opentype'), url("@{file-path}.woff") format('woff'), url("@{file-path}.ttf") format('truetype');
+	}
+}
+
+.square-rotate(@size, @border-width: 2px, @border-color: #fff){
 	width: @size;
 	height: @size;
 	transform: rotate(45deg);
-	border: 1px solid @border-color;
-	color: @text-color;
+	border: @border-width solid @border-color;
 }
 .psevdo(){
 	content: '';
