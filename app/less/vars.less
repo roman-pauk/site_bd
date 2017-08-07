@@ -1,5 +1,6 @@
 @font-color: #777;
 @accent-color: #e83a93;
+@overlay-color: rgba(232, 58, 147, 0.45);
 
 @default-font: "HomizioNova", sans-serif;
 
@@ -30,4 +31,8 @@
 .trsh(@pr, @dur: 0.3s){
 	transition: @pr @dur;
 }
-
+.ul-def(@padding: 0){
+	margin: 0;
+	padding: @padding 0;
+	list-style-type: none;
+}
